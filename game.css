@@ -1,0 +1,121 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: #c8d9e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+
+  max-width: 350px;
+  width: 90%;
+  min-height: 420px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+h1 {
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+/* LEVEL SECTION */
+.level-section {
+  margin-bottom: 15px;
+}
+
+select,
+button {
+  padding: 7px 15px;
+  border-radius: 10px;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+}
+
+button {
+  background: #4e73df;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.hidden {
+  display: none;
+}
+
+/* GAME AREA */
+.question-box {
+  font-size: 18px;
+  margin: 5px 0;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.drop-zone {
+  width: 230px;
+  height: 50px;
+  margin: 10px auto;
+  border: 2px dashed #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.choice {
+  background: #eee;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: grab;
+}
+
+.choice:hover {
+  background: #d9d9d9;
+}
+
+/* BACK BUTTON */
+.back {
+  margin-top: 10px;
+  background: red;
+  color: white;
+}
+
+.score {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* NAVIGATION BAR INSIDE GAME */
+.navbar {
+  width: 100%;
+  padding: 10px 20px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+}

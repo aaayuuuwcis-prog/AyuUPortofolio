@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayu Dwi Hanafi</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="animate">
+      <div class="logo">Ayu Dwi Hanafi</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#game">Game</a></li>
+        <!-- diperbaiki -->
+        <li><a href="#profile">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home" class="hero animate">
+      <div>
+        <h1 class="animate delay2">Ayu Dwi Hanafi</h1>
+        <p class="animate delay3">
+          Portofolio ini berisikan tentang informasi pribadi saya sebagai siswa
+          Rekayasa Perangkat Lunak
+        </p>
+        <p class="animate delay3">Web Developer | Designer | Student</p>
+        <a href="#projects" class="btn-primary animate delay4"
+          >View My Projects</a
+        >
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="animate">
+      <h2 class="animate delay1">About Me</h2>
+      <div class="about-container">
+        <img
+          src="fotoAyu/ayu.jpeg"
+          alt="fotoAyu"
+          class="about-img animate delay2"
+        />
+        <div class="about-text animate delay3">
+          <p>
+            Saya adalah seorang web developer yang senang membuat website modern
+            menggunakan HTML, CSS, dan JavaScript. Saya suka membuat tampilan
+            website yang rapi dan mudah digunakan, sesuai kebutuhannya agar
+            dapat menarik perhatian pengguna.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="animate">
+      <h2 class="animate delay1">My Projects</h2>
+      <div class="projects">
+        <div class="card animate zoom delay2">
+          <h3>Project 1</h3>
+          <p>Robotik sederhana dengan sensor sederhana</p>
+          <a href="project1.html" class="btn-primary">View Project</a>
+        </div>
+        <div class="card animate zoom delay3">
+          <h3>Project 2</h3>
+          <p>Menampilkan teks pada modul LCD</p>
+          <a href="project2.html" class="btn-primary">View Project</a>
+        </div>
+        <div class="card animate zoom delay4">
+          <h3>Project 3</h3>
+          <p>SmartHome IoT sederhana</p>
+          <a href="project3.html" class="btn-primary">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MINI GAME CARD -->
+    <section id="game-section">
+      <div id="game" class="card animate zoom delay5">
+        <h3>Mini Game Math & English</h3>
+        <p>Game edukasi: Tebak kata & hitung cepat</p>
+        <a href="game.html" class="btn-primary">Play Game</a>
+      </div>
+    </section>
+
+    <!-- CONNECT / PROFILE -->
+    <section id="profile" class="contact-section animate">
+      <h2 class="animate delay1">Mari Terkoneksi</h2>
+      <p class="contact-desc animate delay2">
+        Silahkan hubungi saya kapanpun anda menginginkannya dengan platform
+        kontak pribadi saya dibawah
+      </p>
+      <div class="contact-icons animate delay3">
+        <a href="tel:085829498163" class="icon">
+          <img src="fotoAyu/icons8-whatsapp-48.png" alt="WhatsApp" />
+        </a>
+        <a href="mailto:aaayuuuwcis@gmail.com" class="icon">
+          <img src="fotoAyu/gmail.png" alt="Email" />
+        </a>
+        <a href="https://instagram.com/agustd_uga" target="_blank" class="icon">
+          <img src="fotoAyu/icons8-instagram-94.png" alt="Instagram" />
+        </a>
+        <a href="https://www.youtube.com/@aaayuuuwcis" class="icon">
+          <img src="fotoAyu/icons8-youtube-logo-48.png" alt="Youtube" />
+        </a>
+        <a
+          href="https://maps.app.goo.gl/5NhwR338Rqk2aDrz6"
+          target="_blank"
+          class="icon"
+        >
+          <img src="fotoAyu/icons8-place-marker-48.png" alt="Maps" />
+        </a>
+      </div>
+    </section>
+
+    <!-- JAVASCRIPT -->
+    <script>
+      const elements = document.querySelectorAll(".animate");
+      function showOnScroll() {
+        elements.forEach((el) => {
+          const rect = el.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 100) {
+            el.classList.add("show");
+          }
+        });
+      }
+      window.addEventListener("scroll", showOnScroll);
+      window.addEventListener("load", showOnScroll);
+    </script>
+
+    <!-- FOOTER -->
+    <footer
+      style="
+        text-align: center;
+        padding: 20px 0;
+        background: #97b5e4;
+        color: #fff;
+        margin-top: 40px;
+      "
+    >
+      &copy; 2025 Ayu Dwi Hanafi. All Rights Reserved.
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 1 Detail</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">MyPortfolio</div>
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+      </ul>
+    </nav>
+
+    <!-- CARD CONTAINER -->
+    <section class="project-detail">
+      <h2 class="reveal fade-up">Detail Project 1</h2>
+
+      <div class="project-card-detail reveal fade-up">
+        <img
+          src="fotoAyu/robotik.jpeg"
+          alt="Project 1"
+          class="project-img reveal fade-up"
+        />
+
+        <p class="project-desc reveal fade-up">
+          Ini adalah project pertama yang saya buat, yaitu robot avoider sederhana
+          dengan tambahan sensor ultrasonik atau sensor jarak jauh. Robotik
+          sederhana ini bisa digunakan untuk mendeteksi jarak, ketika di
+          depannya ada penghalang maka secara otomatis robot ini akan menjauh
+          dan bergerak ke sisi lain.
+        </p>
+      </div>
+
+      <a href="index.html#projects" class="btn-primary reveal fade-up"
+        >Back to Projects</a
+      >
+    </section>
+
+    <!-- SCRIPT REVEAL ANIMATION -->
+    <script>
+      const revealElements = document.querySelectorAll(".reveal");
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          }
+        });
+      });
+
+      revealElements.forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>

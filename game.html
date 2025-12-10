@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag & Drop Game</title>
+    <link rel="stylesheet" href="game.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Drag & Drop Mini Game</h1>
+      <p class="subtitle">Latih kemampuanmu dengan game edukasi seru ini!</p>
+
+      <!-- SUBJECT SELECT -->
+      <div class="subject-section" id="subject-section">
+        <h3>Pilih Materi</h3>
+        <select id="subjectSelect">
+          <option value="matrix">Matrix</option>
+          <option value="sequence">Barisan & Deret</option>
+          <option value="bunga">Bunga Majemuk & Anuitas</option>
+          <option value="procedure">Procedure Text (English)</option>
+        </select>
+      </div>
+
+      <!-- LEVEL SELECT -->
+      <div class="level-section" id="level-section">
+        <h3>Pilih Level</h3>
+        <select id="levelSelect">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+
+        <button id="startBtn">Start Game</button>
+      </div>
+
+      <!-- GAME AREA -->
+      <div id="game-area" class="hidden">
+        <h2 id="subjectTitle"></h2>
+
+        <div id="question-box" class="question-box"></div>
+
+        <div class="drop-zone" id="drop-zone">Drop Here</div>
+
+        <div id="choices" class="choices"></div>
+
+        <p id="feedback"></p>
+        <p class="score">Score: <span id="score">0</span></p>
+
+        <button
+          onclick="backQuestion()"
+          id="backQuestionBtn"
+          class="back-question"
+        >
+          Back Question
+        </button>
+        <button onclick="nextQuestion()" id="nextBtn" class="hidden">
+          Next
+        </button>
+        <button id="backHomeBtn" class="back-home">Back Home</button>
+      </div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
